@@ -12,11 +12,7 @@ public class Process {
         this.deadline = deadline;
     }
 
-    /**
-     * Metoda generuje początkową listę procesów.
-     * Dla symulacji dynamicznej używana jest metoda dynamicEDF,
-     * więc ta metoda pozostaje do testów algorytmów statycznych.
-     */
+    //Non-dynamic implementation
     public static ArrayList<Process> generateProcesses(int n) {
         Random random = new Random();
         ArrayList<Process> listOfProcesses = new ArrayList<>();

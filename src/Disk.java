@@ -132,11 +132,7 @@ public class Disk {
         return seekCount;
     }
 
-    /**
-     * Dynamiczna symulacja algorytmu EDF – nowe żądania pojawiają się w trakcie symulacji.
-     * @param simulationTime maksymalny czas symulacji
-     * @return suma ruchów głowicy
-     */
+    //Dynamic implementation
     public int dynamicEDF(int simulationTime) {
         PriorityQueue<Process> readyQueue = new PriorityQueue<>(Comparator.comparingInt(p -> p.deadline));
         int currentTime = 0;
